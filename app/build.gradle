@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    
+
+
+    defaultConfig {
+        applicationId "br.com.fidelizacao.app"
+        minSdkVersion 23
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/java/br/com/fidelizacao/br.com.fidelizacao.fidelizacao.MainActivity'
+    }
+
+    buildTypes {
+       release {
+           minifyEnabled false
+           proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+       }
+    }
+
+}
+
+dependencies {
+    implementation project(':fidelizacao')
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.android.support:design:27.1.1'
+}
