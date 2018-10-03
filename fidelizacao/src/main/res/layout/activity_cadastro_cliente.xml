@@ -32,6 +32,10 @@
             android:layout_height="33dp"
             android:background="@android:color/white"
             android:hint="Nome"
+            android:lines="1"
+            android:maxLength="255"
+            android:maxLines="1"
+            android:minLines="1"
             android:paddingLeft="16dp" />
     </android.support.design.widget.TextInputLayout>
 
@@ -54,11 +58,15 @@
             android:layout_height="37dp"
             android:background="@android:color/white"
             android:hint="CPF"
-            android:paddingLeft="16dp" />
+            android:lines="1"
+            android:maxLines="1"
+            android:minLines="1"
+            android:paddingLeft="16dp"
+            android:singleLine="true" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputLayout5"
+        android:id="@+id/textInputLayout9"
         android:layout_width="419dp"
         android:layout_height="60dp"
         android:layout_marginEnd="8dp"
@@ -76,6 +84,10 @@
             android:layout_height="33dp"
             android:background="@android:color/white"
             android:hint="Email"
+            android:lines="1"
+            android:maxLength="255"
+            android:maxLines="1"
+            android:minLines="1"
             android:paddingLeft="16dp" />
     </android.support.design.widget.TextInputLayout>
 
@@ -98,11 +110,15 @@
             android:layout_height="37dp"
             android:background="@android:color/white"
             android:hint="Celular"
+            android:lines="1"
+            android:maxLength="255"
+            android:maxLines="1"
+            android:minLines="1"
             android:paddingLeft="16dp" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputLayout6"
+        android:id="@+id/textInputLayoutDataNascimento"
         android:layout_width="419dp"
         android:layout_height="60dp"
         android:layout_marginEnd="8dp"
@@ -110,19 +126,20 @@
         android:layout_marginTop="480dp"
         android:background="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintHorizontal_bias="0.732"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/etDataNascimento"
             android:layout_width="match_parent"
-            android:layout_height="39dp"
+            android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:hint="Data de Nascimento"
-            android:inputType="date"
+            android:inputType="text"
             android:paddingLeft="16dp" />
     </android.support.design.widget.TextInputLayout>
+
 
     <ImageView
         android:id="@+id/imageView3"

@@ -95,6 +95,7 @@ public class LoginActivity extends AppCompatActivity {
             Cliente cliente = new Cliente();
             cliente.setCpf(txtCpf);
 
+            Log.e("CPF", txtCpf);
             new TaskRest(TaskRest.RequestMethod.POST, handlerLogin).execute(RestAddress.LOGIN, parser.fromObject(cliente));
         }
     }
